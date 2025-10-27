@@ -1,0 +1,23 @@
+# API Keys and Configuration
+# NEVER commit these files - they contain sensitive API keys!
+.env
+config.js
+
+# Node modules (if added in the future)
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Extension packaging
+*.zip
+*.crx
+*.pem

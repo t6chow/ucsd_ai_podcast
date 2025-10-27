@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "UCSD Video AI Assistant",
+  "version": "1.0",
+  "description": "Adds an AI chat sidebar for video content on UCSD podcast sites",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://podcast.ucsd.edu/*",
+    "https://api.anthropic.com/*",
+    "https://cfvod.kaltura.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://podcast.ucsd.edu/*"
+      ],
+      "js": ["config.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
