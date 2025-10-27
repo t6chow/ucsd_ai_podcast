@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "icon" :{
-    "16": "podcast_icon_16",
-    "32": "podcast_icon_32",
-    "48": "podcast_icon_48",
-    "128": "podcast_icon_128" 
+    "16": "podcast_icon_16.jpg",
+    "32": "podcast_icon_32.jpg",
+    "48": "podcast_icon_48.jpg",
+    "128": "podcast_icon_128.jpg" 
   },
   "name": "UCSD Video AI Assistant",
   "version": "1.0",

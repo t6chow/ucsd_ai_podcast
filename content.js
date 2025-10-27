@@ -641,7 +641,9 @@ console.log('UCSD AI Extension: simpleTest function:', typeof window.simpleTest)
       console.log('UCSD AI Extension: Calling Claude API...');
 
       // Build transcription context (limit to reasonable size to avoid token limits)
-      const maxSegments = 500; // Adjust based on typical lecture length
+      // Claude Sonnet 4 has 200k context window, so we can include the full transcription
+      // Each segment is roughly 50-100 tokens, so even 2000 segments (~100 mins) = ~150k tokens max
+      const maxSegments = 2000; // Increased to support full-length lectures (up to ~2 hours)
       const transcriptionContext = window.ucsdTranscriptionData
         .slice(0, maxSegments)
         .map(seg => `[${seg.startTime}] ${seg.text}`)
