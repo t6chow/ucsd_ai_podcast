@@ -1,23 +1,60 @@
 # API Keys and Configuration
 # NEVER commit these files - they contain sensitive API keys!
 .env
+.env.*
+!.env.example
 config.js
+credentials.json
+secrets.*
 
-# Node modules (if added in the future)
+# SSH Keys and Certificates
+*.pem
+*.key
+*.pub
+id_rsa*
+id_ed25519*
+*.ppk
+
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
 
-# IDE files
+# IDE and Editor files
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 *~
+.project
+.settings/
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Extension packaging
+# Browser Extension packaging
 *.zip
 *.crx
-*.pem
+
+# Logs
+logs/
+*.log
+
+# Downloaded course materials (HTML pages and assets)
+*.html
+*_files/
+
+# Temporary and cache files
+tmp/
+temp/
+*.tmp
+*.cache

@@ -1,6 +1,6 @@
 # UCSD AI Extension - Setup Guide
 
-This browser extension helps students interact with UCSD lecture videos using AI (Claude).
+This CHROME browser extension helps students interact with UCSD lecture videos using AI (Claude).
 
 ## Problem: CORS Error
 
@@ -22,17 +22,37 @@ We solve this by running a local Node.js server that:
 
 ## Setup Instructions
 
+### Prerequisites
+
+- **Node.js** (v14 or higher) - [Download here](https://nodejs.org/)
+- **Anthropic API Key** - [Get one here](https://console.anthropic.com/)
+
 ### 1. Install Node.js Dependencies
+
+Install all required dependencies listed in `requirements.txt`:
 
 ```bash
 npm install
 ```
 
 This installs:
-- `express` - Web server framework
-- `cors` - Handles cross-origin requests
-- `node-fetch` - Makes API calls to Anthropic
-- `dotenv` - Loads API key from .env file
+- `express@^4.18.2` - Web server framework
+- `cors@^2.8.5` - Handles cross-origin requests
+- `node-fetch@^2.7.0` - Makes API calls to Anthropic
+- `dotenv@^16.3.1` - Loads API key from .env file
+- `nodemon@^3.0.1` - Auto-restart during development
+
+**Note:** All dependencies are also listed in `requirements.txt` for reference.
+
+### 1.5. Configure Your API Key
+
+Create a `.env` file in the project root with your Anthropic API key:
+
+```bash
+ANTHROPIC_API_KEY=your_api_key_here
+```
+
+**Important:** Never commit this file to git! It's already in `.gitignore`.
 
 ### 2. Start the Proxy Server
 
