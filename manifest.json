@@ -1,5 +1,11 @@
 {
   "manifest_version": 3,
+  "icon" :{
+    "16": "podcast_icon_16",
+    "32": "podcast_icon_32",
+    "48": "podcast_icon_48",
+    "128": "podcast_icon_128" 
+  },
   "name": "UCSD Video AI Assistant",
   "version": "1.0",
   "description": "Adds an AI chat sidebar for video content on UCSD podcast sites",
