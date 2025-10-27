@@ -1,4 +1,4 @@
-LLM wrote all of ReadMe (still important to skim) but this app isn't able to automatically bring in the transcription file. Go to your podcast, press "Ask AI", open dev tools, go to network, you should see a file .srt -> open and copy its link. paste link in prompted box in "Ask AI" pop up. send questions to me terranchow@gmail.com
+ONLY WORKS ON CHROME! LLM wrote all of ReadMe (still important to skim) but this app isn't able to automatically bring in the transcription file. Go to your podcast, press "Ask AI", open dev tools, go to network, you should see a file .srt -> open and copy its link. paste link in prompted box in "Ask AI" pop up. send questions to me terranchow@gmail.com
 
 # UCSD AI Extension - Setup Guide
 
